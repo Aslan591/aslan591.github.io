@@ -6,16 +6,17 @@
   <title>Aslan Iakupov | Portfolio</title>
   <style>
     :root {
-      --bg: #07110b;
-      --bg-secondary: #0d1a12;
-      --card: #102016;
-      --card-hover: #15301f;
-      --text: #e8fff0;
-      --muted: #9cc7a8;
-      --accent: #38d26f;
-      --accent-dark: #1e9c4b;
-      --border: rgba(56, 210, 111, 0.18);
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      --bg: #050505;
+      --bg-secondary: #0d0d0d;
+      --card: #121212;
+      --card-hover: #1a1a1a;
+      --text: #f5f5f5;
+      --muted: #b8b8b8;
+      --accent: #ffb703;
+      --accent-2: #fb8500;
+      --accent-soft: rgba(255, 183, 3, 0.12);
+      --border: rgba(255, 183, 3, 0.18);
+      --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
     }
 
     * {
@@ -31,9 +32,9 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       background:
-        radial-gradient(circle at top left, rgba(56, 210, 111, 0.08), transparent 30%),
-        radial-gradient(circle at top right, rgba(56, 210, 111, 0.05), transparent 25%),
-        linear-gradient(180deg, var(--bg) 0%, #050b07 100%);
+        radial-gradient(circle at top left, rgba(255, 183, 3, 0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(251, 133, 0, 0.10), transparent 24%),
+        linear-gradient(180deg, #080808 0%, #030303 100%);
       color: var(--text);
       line-height: 1.6;
     }
@@ -53,7 +54,7 @@
       top: 0;
       z-index: 100;
       backdrop-filter: blur(10px);
-      background: rgba(7, 17, 11, 0.7);
+      background: rgba(5, 5, 5, 0.82);
       border-bottom: 1px solid var(--border);
     }
 
@@ -102,13 +103,17 @@
     }
 
     .hero-text h1 {
-      font-size: clamp(2.4rem, 5vw, 4.6rem);
+      font-size: clamp(2.4rem, 5vw, 4.7rem);
       line-height: 1.05;
       margin-bottom: 16px;
     }
 
     .hero-text h1 span {
-      color: var(--accent);
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
 
     .hero-text p {
@@ -136,13 +141,13 @@
     }
 
     .btn-primary {
-      background: var(--accent);
-      color: #041008;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: #111;
     }
 
     .btn-primary:hover {
-      background: #49e07d;
       transform: translateY(-2px);
+      filter: brightness(1.05);
     }
 
     .btn-secondary {
@@ -151,7 +156,7 @@
     }
 
     .btn-secondary:hover {
-      background: rgba(56, 210, 111, 0.08);
+      background: var(--accent-soft);
       transform: translateY(-2px);
     }
 
@@ -162,8 +167,8 @@
     }
 
     .tag {
-      background: rgba(56, 210, 111, 0.08);
-      color: var(--accent);
+      background: rgba(255, 183, 3, 0.08);
+      color: #ffd166;
       border: 1px solid var(--border);
       padding: 8px 14px;
       border-radius: 999px;
@@ -171,7 +176,7 @@
     }
 
     .hero-card {
-      background: linear-gradient(180deg, rgba(16, 32, 22, 0.95), rgba(10, 20, 14, 0.95));
+      background: linear-gradient(180deg, rgba(18, 18, 18, 0.98), rgba(10, 10, 10, 0.98));
       border: 1px solid var(--border);
       border-radius: 26px;
       padding: 28px;
@@ -192,7 +197,7 @@
 
     .hero-card li {
       background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(56, 210, 111, 0.1);
+      border: 1px solid rgba(255, 183, 3, 0.12);
       padding: 14px 16px;
       border-radius: 16px;
       color: var(--muted);
@@ -257,6 +262,7 @@
     .card:hover {
       transform: translateY(-6px);
       background: var(--card-hover);
+      border-color: rgba(251, 133, 0, 0.28);
     }
 
     .card h3 {
@@ -273,6 +279,10 @@
     .project-link {
       color: var(--accent);
       font-weight: 700;
+    }
+
+    .project-link:hover {
+      color: var(--accent-2);
     }
 
     .skill-list {
@@ -340,7 +350,7 @@
 <body>
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo">Aslan591</div>
+      <div class="logo">Aslan Iakupov</div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -354,7 +364,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1>Hi, I'm <span>Aslan Yakupov</span></h1>
+          <h1>Hi, I'm <span>Aslan Iakupov</span></h1>
           <p>
             Junior ML Engineer focused on machine learning,
             data analysis, and building practical projects.
@@ -369,8 +379,8 @@
             <div class="tag">Python</div>
             <div class="tag">Java</div>
             <div class="tag">Machine Learning</div>
+            <div class="tag">FastAPI</div>
             <div class="tag">SQL</div>
-            <div class="tag">Backend</div>
           </div>
         </div>
 
@@ -430,10 +440,10 @@
           </div>
 
           <div class="card">
-            <h3>NLP Text Classification</h3>
+            <h3>FastAPI Backend Project</h3>
             <p>
-              A natural language processing project for text preprocessing, vectorization,
-              classification, and analysis of model quality.
+              A backend project built with FastAPI for creating APIs, handling requests,
+              and structuring a clean and practical server-side application.
             </p>
             <a class="project-link" href="https://github.com/Aslan591" target="_blank">GitHub →</a>
           </div>
@@ -444,9 +454,6 @@
     <section id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
-        <p class="section-subtitle">
-      
-        </p>
 
         <div class="skills-grid">
           <div class="card">
@@ -461,13 +468,15 @@
             <h3>Machine Learning</h3>
             <ul class="skill-list">
               <li>scikit-learn</li>
-              <li>pandas, numpy</li>
+              <li>pandas</li>
+              <li>numpy</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Tools</h3>
+            <h3>Backend & Tools</h3>
             <ul class="skill-list">
+              <li>FastAPI</li>
               <li>Git / GitHub</li>
               <li>Docker</li>
               <li>SQL</li>
@@ -496,7 +505,7 @@
         <div class="contacts-grid">
           <div class="card contact-item">
             <strong>Email</strong>
-            <a href="mailto:a.iakupov@innopolis.university">a.jakupov@innopolis.university</a>
+            <a href="mailto:a.iakupov@innopolis.university">a.iakupov@innopolis.university</a>
           </div>
 
           <div class="card contact-item">
@@ -515,7 +524,7 @@
 
   <footer>
     <div class="container">
-      © 2026 Aslan Yakupov. Built with GitHub Pages.
+      © 2026 Aslan Iakupov. Built with GitHub Pages.
     </div>
   </footer>
 </body>
