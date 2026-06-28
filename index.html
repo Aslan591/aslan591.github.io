@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aslan Iakupov | Portfolio</title>
+  <title>Aslan Iakupov | ML Engineer Portfolio</title>
   <style>
     :root {
       --bg: #050505;
@@ -239,7 +240,7 @@
     .section-subtitle {
       color: var(--muted);
       margin-bottom: 34px;
-      max-width: 700px;
+      max-width: 760px;
     }
 
     .about-box {
@@ -263,11 +264,11 @@
     }
 
     .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     .skills-grid {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     }
 
     .contacts-grid {
@@ -386,6 +387,7 @@
     }
   </style>
 </head>
+
 <body>
   <header class="navbar">
     <div class="container nav-inner">
@@ -405,7 +407,9 @@
         <div class="hero-text">
           <h1>Hi, I'm <span>Aslan Iakupov</span></h1>
           <p>
-            ML Engineer focused on machine learning, data analysis, backend development, and building practical projects, with 3 years of academic development experience.
+            ML Engineer focused on machine learning, information retrieval, NLP,
+            recommender systems, and backend-oriented AI products.
+            I build practical projects that connect models, data, APIs, and real user workflows.
           </p>
 
           <div class="hero-buttons">
@@ -415,11 +419,12 @@
 
           <div class="hero-tags">
             <div class="tag">Python</div>
-            <div class="tag">Java</div>
             <div class="tag">Machine Learning</div>
+            <div class="tag">NLP</div>
+            <div class="tag">Information Retrieval</div>
             <div class="tag">FastAPI</div>
-            <div class="tag">SQL</div>
-            <div class="tag">Backend</div>
+            <div class="tag">PostgreSQL</div>
+            <div class="tag">Docker</div>
           </div>
         </div>
 
@@ -431,10 +436,10 @@
           <div class="hero-card">
             <h3>Quick Info</h3>
             <ul>
-              <li>Machine Learning enthusiast</li>
-              <li>Interested in real-world AI systems</li>
-              <li>Building projects for portfolio and future internships</li>
-              <li>Focused on growth, clean code, and practical skills</li>
+              <li>DSAI student at Innopolis University</li>
+              <li>Focused on ML, NLP, IR, and recommender systems</li>
+              <li>Building production-oriented ML and backend projects</li>
+              <li>Interested in clean code, experiments, and real product value</li>
             </ul>
           </div>
         </div>
@@ -447,12 +452,15 @@
         <p class="section-subtitle">
           A short introduction for recruiters, teammates, and anyone visiting this page.
         </p>
+
         <div class="about-box">
           <p>
-            I am a student interested in machine learning, backend development, and data-driven systems.
-            I enjoy learning how algorithms work in practice, building projects from scratch,
-            and improving both my theoretical understanding and coding skills.
-            My goal is to create useful, practical solutions and grow into a strong ML engineer.
+            I am a Data Science and Artificial Intelligence student at Innopolis University.
+            My main interests are machine learning, NLP, information retrieval, recommender systems,
+            and backend-oriented ML applications. I enjoy building projects end-to-end:
+            from data processing and model experiments to APIs, databases, Dockerized services,
+            and user-facing results. My goal is to grow into a strong ML Engineer who can build
+            useful AI products, not only train models.
           </p>
         </div>
       </div>
@@ -462,28 +470,67 @@
       <div class="container">
         <h2 class="section-title">Projects</h2>
         <p class="section-subtitle">
+          Practical ML, NLP, information retrieval, and backend-oriented projects.
         </p>
 
         <div class="projects-grid">
           <div class="card">
-            <h3>AI Resume Analyzer</h3>
+            <h3>Neural IR Ranking Experiments</h3>
             <p>
-              A web application that analyzes a resume against a job description, evaluates skill matching 
-              and semantic similarity, and provides an overall score with actionable improvement recommendations using AI.
+              An information retrieval project with BM25, dense retrieval, SPLADE,
+              ColBERT-style reranking, RRF fusion, RankNet, LambdaRank, and evaluation on BEIR NFcorpus.
+              The project focuses on search quality, ranking metrics, and retriever comparison.
             </p>
-            <a class="project-link" href="https://github.com/Aslan591/ai-resume-analyzer.git" target="_blank">GitHub →</a>
+            <a class="project-link" href="https://github.com/Aslan591/neural-ir-ranking-experiments" target="_blank">GitHub →</a>
           </div>
 
           <div class="card">
-            <h3>Movie-recommendation-system</h3>
+            <h3>Incident War Room — Report Service</h3>
             <p>
-              A web application that delivers personalized movie recommendations, analyzes user ratings through collaborative filtering and matrix factorization, 
-              and updates suggestions through model training and retraining with a FastAPI-powered backend.
+              My contribution to a team incident management platform. I worked on the Python report service:
+              PDF incident reports, AI-generated summary and title, API integration, S3 upload logic,
+              fallback behavior when storage is unavailable, and report design improvements.
             </p>
-            <a class="project-link" href="https://github.com/Aslan591/movie-recommendation-system.git" target="_blank">GitHub →</a>
+            <a class="project-link" href="https://github.com/IncidentWarRoom/Incident-War-Room" target="_blank">GitHub →</a>
           </div>
 
-          <!-- для добавления новых проекто -->
+          <div class="card">
+            <h3>Distributed Text Mining & Sentiment Analysis</h3>
+            <p>
+              A distributed text mining and sentiment analysis project focused on large-scale text processing,
+              model training, inference, validation, scalability testing, and result visualization.
+            </p>
+            <a class="project-link" href="https://github.com/Kazer0g/DTM-SA" target="_blank">GitHub →</a>
+          </div>
+
+          <div class="card">
+            <h3>Movie Recommendation System</h3>
+            <p>
+              A personalized movie recommendation system built with FastAPI, PostgreSQL, Docker,
+              collaborative filtering, and matrix factorization with SVD. The project includes
+              API-based inference, model training, retraining logic, and persistent data storage.
+            </p>
+            <a class="project-link" href="https://github.com/Aslan591/movie-recommendation-system" target="_blank">GitHub →</a>
+          </div>
+
+          <div class="card">
+            <h3>AI Resume Analyzer</h3>
+            <p>
+              A FastAPI application that compares a resume with a job description,
+              extracts skills, measures semantic similarity, calculates a matching score,
+              and generates AI-based improvement recommendations with fallback logic.
+            </p>
+            <a class="project-link" href="https://github.com/Aslan591/ai-resume-analyzer" target="_blank">GitHub →</a>
+          </div>
+
+          <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>
+              A personal portfolio website built with HTML and CSS to present my background,
+              skills, projects, and contact information in a clean and simple format.
+            </p>
+            <a class="project-link" href="https://github.com/Aslan591/aslan591.github.io" target="_blank">GitHub →</a>
+          </div>
         </div>
       </div>
     </section>
@@ -491,6 +538,9 @@
     <section id="skills">
       <div class="container">
         <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Technologies and methods I have used across my ML, IR, NLP, backend, and data projects.
+        </p>
 
         <div class="skills-grid">
           <div class="card">
@@ -498,6 +548,9 @@
             <ul class="skill-list">
               <li>Python</li>
               <li>Java</li>
+              <li>SQL</li>
+              <li>HTML / CSS</li>
+              <li>Algorithms and data structures</li>
             </ul>
           </div>
 
@@ -505,27 +558,85 @@
             <h3>Machine Learning</h3>
             <ul class="skill-list">
               <li>scikit-learn</li>
+              <li>PyTorch</li>
               <li>pandas</li>
-              <li>numpy</li>
+              <li>NumPy</li>
+              <li>Feature engineering</li>
+              <li>Model evaluation</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Backend & Tools</h3>
+            <h3>NLP & Information Retrieval</h3>
+            <ul class="skill-list">
+              <li>BM25</li>
+              <li>TF-IDF</li>
+              <li>Dense Retrieval</li>
+              <li>Sentence-BERT</li>
+              <li>SPLADE</li>
+              <li>ColBERT-style reranking</li>
+              <li>RankNet / LambdaRank</li>
+              <li>RRF fusion</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Backend & APIs</h3>
             <ul class="skill-list">
               <li>FastAPI</li>
-              <li>Git / GitHub</li>
-              <li>Docker</li>
-              <li>SQL</li>
+              <li>REST API</li>
+              <li>Pydantic</li>
+              <li>SQLAlchemy</li>
+              <li>Alembic</li>
+              <li>API integration</li>
             </ul>
           </div>
 
           <div class="card">
-            <h3>Currently Learning</h3>
+            <h3>Databases & Infrastructure</h3>
+            <ul class="skill-list">
+              <li>PostgreSQL</li>
+              <li>SQLite</li>
+              <li>Docker</li>
+              <li>S3-compatible storage</li>
+              <li>Environment configuration</li>
+              <li>Service-based architecture</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Data & Distributed Systems</h3>
+            <ul class="skill-list">
+              <li>PySpark</li>
+              <li>Text preprocessing</li>
+              <li>Sentiment analysis</li>
+              <li>Large-scale data processing</li>
+              <li>Scalability testing</li>
+              <li>Experiment tracking</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Tools</h3>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>Docker Compose</li>
+              <li>pytest</li>
+              <li>Postman</li>
+              <li>Linux basics</li>
+              <li>PyCharm</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Currently Improving</h3>
             <ul class="skill-list">
               <li>Deep Learning</li>
-              <li>NLP</li>
-              <li>Advanced ML systems</li>
+              <li>Transformers</li>
+              <li>Recommendation systems</li>
+              <li>ML system design</li>
+              <li>Production ML practices</li>
+              <li>Clean backend architecture</li>
             </ul>
           </div>
         </div>
@@ -542,7 +653,7 @@
         <div class="contacts-grid">
           <div class="card contact-item">
             <strong>Email</strong>
-            <a href="mailto:a.jakupov@innopolis.university">a.iakupov@innopolis.university</a>
+            <a href="mailto:a.iakupov@innopolis.university">a.iakupov@innopolis.university</a>
           </div>
 
           <div class="card contact-item">
@@ -552,7 +663,7 @@
 
           <div class="card contact-item">
             <strong>Telegram</strong>
-            <span>@TychkaNchiK</span>
+            <a href="https://t.me/TychkaNchiK" target="_blank">@TychkaNchiK</a>
           </div>
         </div>
       </div>
@@ -566,3 +677,4 @@
   </footer>
 </body>
 </html>
+```
